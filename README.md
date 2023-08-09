@@ -1,6 +1,6 @@
 # Profile
 
-## BSProfile {#bsprofile}
+## BSProfile
 - id `str`
 - handle `str`
 - email `str`
@@ -8,18 +8,20 @@
 - current `str`
 - image `str`
 - name [`BSProfileName`](#bsprofilename)
-- location []`BSProfileLocation`](#bsprofilelocation)
+- location [`BSProfileLocation`](#bsprofilelocation)
 
-## BSProfileName {#bsprofilename}
+## BSProfileName
 - firstname `str`
 - lastname `str`
 
-## BSProfileLocation {#bsprofilelocation}
+## BSProfileLocation
 - postcode `int`
+
+---
 
 # Venue
 
-## BSVenue {#bsvenue}
+## BSVenue
 - id `str`
 - name `str`
 - description `str`
@@ -28,32 +30,32 @@
 - trending `bool`
 - admin `str`
 - pid `str`
-- address `BSVenueAddress`
-- media `BSVenueMedia`
+- address [`BSVenueAddress`](#bsvenueaddress)
+- media [`BSVenueMedia`](#bsvenuemedia)
 
-## BSVenueAddress {#bsvenueaddress}
+## BSVenueAddress
 - street `str`
 - suburb `str`
 - state `str`
 - postcode `int`
-- coords `BSVenueGeopoint`
+- coords [`BSVenueGeopoint`](#bsvenuegeopoint)
 
-## BSVenueMedia {#bsvenuemedia}
+## BSVenueMedia
 - primary `str`
 - additional `[str]`
 
-## BSVenueGeopoint {#bsvenuegeopoint}
-- latitude `latitude`
-- longitude `longitude`
+## BSVenueGeopoint
+- latitude `float`
+- longitude `float`
 
 # Order
 
-## BSOrder {#bsorder}
+## BSOrder
 - id `str`
 - order_pid `str`
 - reference `str`
 - total `int`
 - created_time `datetime`
 - completed_time `datetime`
-- profile `BSProfile`
-- venue `BSVenue`
+- profile [`BSProfile`](#bsprofile)
+- venue [`BSVenue`](#bsvenue)
