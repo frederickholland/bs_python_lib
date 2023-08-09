@@ -1,0 +1,37 @@
+class BSMenuItem:
+    def __init__(
+        self,
+        id: str,
+        name: str,
+        description: str,
+        price: int,
+        venue: str,
+        pid: str,
+    ):
+        self.id = id
+        self.name = name
+        self.description = description
+        self.price = price
+        self.venue = venue
+        self.pid = pid
+
+    @classmethod
+    def from_data(cls, data: dict) -> "BSMenuItem":
+        return cls(
+            data["id"],
+            data["name"],
+            data["description"],
+            data["price"],
+            data["venue"],
+            data["pid"],
+        )
+
+    def to_data(self) -> dict:
+        return {
+            "id": self.id,
+            "name": self.name,
+            "description": self.description,
+            "price": self.price,
+            "venue": self.venue,
+            "pid": self.pid,
+        }

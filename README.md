@@ -48,6 +48,8 @@
 - latitude `float`
 - longitude `float`
 
+---
+
 # Order
 
 ## BSOrder
@@ -59,3 +61,15 @@
 - completed_time `datetime`
 - profile [`BSProfile`](#bsprofile)
 - venue [`BSVenue`](#bsvenue)
+
+---
+
+# MenuItem
+
+## BSMenuItem
+- id `str`
+- name `str`
+- description `str`
+- price `int`
+- venue `str`
+- pid `str`
