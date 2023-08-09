@@ -1,25 +1,25 @@
-# **Profile**
+# Profile
 
-## **BSProfile**
+## BSProfile {#bsprofile}
 - id `str`
 - handle `str`
 - email `str`
 - dob `datetime`
 - current `str`
 - image `str`
-- name `BSProfileName`
-- location `BSProfileLocation`
+- name [`BSProfileName`](#bsprofilename)
+- location []`BSProfileLocation`](#bsprofilelocation)
 
-## **BSProfileName**
+## BSProfileName {#bsprofilename}
 - firstname `str`
 - lastname `str`
 
-## **BSProfileLocation**
+## BSProfileLocation {#bsprofilelocation}
 - postcode `int`
 
-# **Venue**
+# Venue
 
-## **BSVenue**
+## BSVenue {#bsvenue}
 - id `str`
 - name `str`
 - description `str`
@@ -31,24 +31,24 @@
 - address `BSVenueAddress`
 - media `BSVenueMedia`
 
-## **BSVenueAddress**
+## BSVenueAddress {#bsvenueaddress}
 - street `str`
 - suburb `str`
 - state `str`
 - postcode `int`
 - coords `BSVenueGeopoint`
 
-## **BSVenueMedia**
+## BSVenueMedia {#bsvenuemedia}
 - primary `str`
 - additional `[str]`
 
-## **BSVenueGeopoint**
+## BSVenueGeopoint {#bsvenuegeopoint}
 - latitude `latitude`
 - longitude `longitude`
 
-# **Order**
+# Order
 
-## **BSOrder**
+## BSOrder {#bsorder}
 - id `str`
 - order_pid `str`
 - reference `str`
